@@ -1,15 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Application from './component/application/application';
+import Skills from './component/skills/skills';
+import Counter from './component/counter/counter';
 
+const skills=['HTML','CSS','JAVA SCRIPT']
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+       
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Application/>
+      <Skills skills={skills}/>
+      <Counter/>
     </div>
   );
 }
